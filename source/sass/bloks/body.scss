@@ -1,0 +1,13 @@
+body {
+  font-family: $font-family--poppins;
+  color: $black-opopacity-01;
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 29px;
+  min-height: 100vh;
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  overflow-x: hidden;
+}

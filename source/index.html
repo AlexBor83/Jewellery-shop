@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery-shop</title>
+  <!-- <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container header__container">
+        <form class="header__search">
+          <label>
+            <svg class="header__svg" width="14" height="14" aria-hidden="true">
+              <use xlink:href="img/svg/sprite_auto.svg#search"></use>
+            </svg>
+            <input type="text" name="search" class="header__input" placeholder="Type here to search">
+          </label>
+          <button class="visually-hidden" type="submit">Кнопка поиска</button>
+        </form>
+
+        <div class="header__logo logo">
+          <svg class="header__svg" width="66" height="66" aria-hidden="true">
+            <use xlink:href="img/svg/sprite_auto.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="header__user">
+          <a href="#" class="header__login">
+            Login
+          </a>
+          <a href="#" class="header__cart">
+            Cart 0
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__botom">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">
+                What’s new
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Chokers
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Necklaces
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Rings
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Earrings
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="slogan">
+      <h1 class="slogan__title">
+        PERFECTION
+        <span class="slogan__text">
+          made to be yours
+        </span>
+      </h1>
+    </section>
+
+
+    <section class="shop">
+      <h2 class="shop__new">
+        New In
+      </h2>
+    </section>
+
+    <section class="blogs">
+      <div class="container">
+        <div class="blogs__wrap">
+          <h2 class="blogs__title">
+            Blog
+          </h2>
+          <a class="blogs__link" href="#" alt="читать все блоги">
+            Read All
+          </a>
+        </div>
+        <ul class="blogs__list">
+          <li class="blogs__item blog">
+            <div class="blog__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/index-img/blog-jewellery-mobile.webp, img/index-img/blog-jewellery-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/index-img/blog-jewellery-tablet.webp, img/index-img/blog-jewellery-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/index-img/blog-jewellery-desktop.webp, img/index-img/blog-jewellery-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/index-img/blog-jewellery-mobile.jpg, img/index-img/blog-jewellery-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/index-img/blog-jewellery-tablet.jpg, img/index-img/blog-jewellery-tablet@2x.jpg 2x">
+                <!-- 1х: 285px; 2x: 570px -->
+                <img src="img/index-img/blog-jewellery-desktop.jpg"
+                  srcset="img/index-img/blog-jewellery-desktop@2x.jpg 2x" alt="Картинка для блога" width="285"
+                  height="300">
+              </picture>
+            </div>
+            <div class="blog__description">
+              <span class="blog__date">
+                September 30, 2019
+              </span>
+              <p class="blog__slogan">
+                How to care for your jewellery
+              </p>
+              <a class="blog__link" href="#" alt="читать статью полностью">
+                Read Article
+              </a>
+            </div>
+          </li>
+          <li class="blogs__item blog">
+            <div class="blog__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/index-img/blog-power-mobile.webp, img/index-img/blog-power-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/index-img/blog-power-tablet.webp, img/index-img/blog-power-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/index-img/blog-power-desktop.webp, img/index-img/blog-power-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/index-img/blog-power-mobile.jpg, img/index-img/blog-power-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/index-img/blog-power-tablet.jpg, img/index-img/blog-power-tablet@2x.jpg 2x">
+                <!-- 1х: 285px; 2x: 570px -->
+                <img src="img/index-img/blog-power-desktop.jpg" srcset="img/index-img/blog-power-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="285" height="300">
+              </picture>
+            </div>
+            <div class="blog__description">
+              <span class="blog__date">
+                September 23, 2019
+              </span>
+              <p class="blog__slogan">
+                Power of crystals
+              </p>
+              <a class="blog__link" href="#" alt="читать статью полностью">
+                Read Article
+              </a>
+            </div>
+          </li>
+          <li class="blogs__item blog blog--big">
+            <div class="blog__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/index-img/blog-trends-mobile.webp, img/index-img/blog-trends-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/index-img/blog-trends-tablet.webp, img/index-img/blog-trends-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/index-img/blog-trends-desktop.webp, img/index-img/blog-trends-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/index-img/blog-trends-mobile.jpg, img/index-img/blog-trends-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/index-img/blog-trends-tablet.jpg, img/index-img/blog-trends-tablet@2x.jpg 2x">
+                <!-- 1х: 285px; 2x: 570px -->
+                <img src="img/index-img/blog-trends-desktop.jpg" srcset="img/index-img/blog-trends-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="670" height="630">
+              </picture>
+            </div>
+            <div class="blog__description">
+              <span class="blog__date">
+                September 16, 2019
+              </span>
+              <p class="blog__slogan">
+                AW 19 trends
+              </p>
+              <a class="blog__link" href="#" alt="читать статью полностью">
+                Read Article
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="asked-questions">
+      <h2 class="asked-questions__title">
+        Frequently asked questions
+      </h2>
+      <ul class="asked-questions__list">
+        <li class="asked-questions__item">
+          <p class="asked-questions__text">
+            What materials are the jewellery made of?
+          </p>
+          <p class="asked-questions__answer">
+            Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.
+          </p>
+        </li>
+        <li class="asked-questions__item">
+          <p class="asked-questions__text">
+            Which countries do you deliver to?
+          </p>
+          <p class="asked-questions__answer">
+            Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.
+          </p>
+        </li>
+        <li class="asked-questions__item">
+          <p class="asked-questions__text">
+            Which countries do you deliver to?
+          </p>
+          <p class="asked-questions__answer">
+            Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.
+          </p>
+        </li>
+        <li class="asked-questions__item">
+          <p class="asked-questions__text">
+            Can I return the jewellery if it didn't fit me?
+          </p>
+          <p class="asked-questions__answer">
+            Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
+            semiprecious stones and crystals.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="chjewellery-insta">
+      <h2 class="chjewellery-insta__title">
+        @Chjewellery
+      </h2>
+      <a class="chjewellery-insta__link" href="#" alt="подписаться на инстаграм магазина chjewellery">
+        Follow Us
+      </a>
+      <ul class="chjewellery-insta__list">
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="img/index-img/inst-1-mobile.webp, img/index-img/inst-1-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-1-tablet.webp, img/index-img/inst-1-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-1-desktop.webp, img/index-img/inst-1-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/index-img/inst-1-mobile.jpg, img/index-img/inst-1-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-1-tablet.jpg, img/index-img/inst-1-tablet@2x.jpg 2x">
+              <!-- 1х: 230px; 2x: 460px -->
+              <img src="img/index-img/inst-1-desktop.jpg" srcset="img/index-img/inst-1-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="img/index-img/inst-2-mobile.webp, img/index-img/inst-2-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-2-tablet.webp, img/index-img/inst-2-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-2-desktop.webp, img/index-img/inst-2-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/index-img/inst-2-mobile.jpg, img/index-img/inst-2-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-2-tablet.jpg, img/index-img/inst-2-tablet@2x.jpg 2x">
+              <!-- 1х: 230px; 2x: 460px -->
+              <img src="img/index-img/inst-2-desktop.jpg" srcset="img/index-img/inst-2-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="230" height="150">
+            </picture>
+          </div>
+        </li>
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto chjewellery-insta__foto--big">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="img/index-img/inst-3-mobile.webp, img/index-img/inst-3-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-3-tablet.webp, img/index-img/inst-3-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-3-desktop.webp, img/index-img/inst-3-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/index-img/inst-3-mobile.jpg, img/index-img/inst-3-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-3-tablet.jpg, img/index-img/inst-3-tablet@2x.jpg 2x">
+              <!-- 1х: 399px; 2x: 798px -->
+              <img src="img/index-img/inst-3-desktop.jpg" srcset="img/index-img/inst-3-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="399" height="412">
+            </picture>
+          </div>
+        </li>
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto">
+            <picture>
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-4-tablet.webp, img/index-img/inst-4-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-4-desktop.webp, img/index-img/inst-4-desktop@2x.webp 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-4-tablet.jpg, img/index-img/inst-4-tablet@2x.jpg 2x">
+              <!-- 1х: 230px; 2x: 460px -->
+              <img src="img/index-img/inst-4-desktop.jpg" srcset="img/index-img/inst-4-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="img/index-img/inst-5-mobile.webp, img/index-img/inst-5-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-5-tablet.webp, img/index-img/inst-5-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-5-desktop.webp, img/index-img/inst-5-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/index-img/inst-5-mobile.jpg, img/index-img/inst-5-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-5-tablet.jpg, img/index-img/inst-5-tablet@2x.jpg 2x">
+              <!-- 1х: 230px; 2x: 460px -->
+              <img src="img/index-img/inst-5-desktop.jpg" srcset="img/index-img/inst-5-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="230" height="150">
+            </picture>
+          </div>
+        </li>
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto">
+            <picture>
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-6-tablet.webp, img/index-img/inst-6-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-6-desktop.webp, img/index-img/inst-6-desktop@2x.webp 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-6-tablet.jpg, img/index-img/inst-6-tablet@2x.jpg 2x">
+              <!-- 1х: 230px; 2x: 460px -->
+              <img src="img/index-img/inst-6-desktop.jpg" srcset="img/index-img/inst-6-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="230" height="230">
+            </picture>
+          </div>
+        </li>
+        <li class="chjewellery-insta__item">
+          <div class="chjewellery-insta__foto">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="img/index-img/inst-7-mobile.webp, img/index-img/inst-7-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="img/index-img/inst-7-tablet.webp, img/index-img/inst-7-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index-img/inst-7-desktop.webp, img/index-img/inst-7-desktop@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/index-img/inst-7-mobile.jpg, img/index-img/inst-7-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/index-img/inst-7-tablet.jpg, img/index-img/inst-7-tablet@2x.jpg 2x">
+              <!-- 1х: 230px; 2x: 460px -->
+              <img src="img/index-img/inst-7-desktop.jpg" srcset="img/index-img/inst-7-desktop@2x.jpg 2x"
+                alt="Картинка для блога" width="230" height="150">
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer__subscribe subscribe">
+      <h2 class="subscribe__title">
+        The good stuff in your inbox
+      </h2>
+      <p class="subscribe__text">
+        News and updates from CH. No spam, we promise.
+      </p>
+      <form class="subscribe__form">
+        <label>
+          <input type="email" name="mail" class="subscribe__input" placeholder="Your E-mail">
+        </label>
+        <button class="subscribe__button" type="submit">Sign Up</button>
+      </form>
+    </section>
+    <section class="footer__navigation navigation">
+      <h2 class="visually-hidden">
+        Разделы сайта
+      </h2>
+      <ul class="navigation__list">
+        <li>
+          <ul class="navigation__wrap">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Ordering & Payment
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Terms & Conditions
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Returns & Exchanges
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Delivery
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class=" navigation__wrap">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                About CH
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Stores & Hours
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Jobs
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer__social social">
+      <h2 class="visually-hidden">
+        Социальные сети
+      </h2>
+
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Facebook">
+                  <svg width="8" height="15" aria-hidden="true">
+                    <use xlink:href="img/svg/sprite_auto.svg#facebook"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Instagram">
+                  <svg width="15" height="15" aria-hidden="true">
+                    <use xlink:href="img/svg/sprite_auto.svg#insta"></use>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Pinterest">
+                  <svg width="8" height="15" aria-hidden="true">
+                    <use xlink:href="img/svg/sprite_auto.svg#pinterest"></use>
+                  </svg>
+                  Pinterest
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Twitter">
+                  <svg width="15" height="13" aria-hidden="true">
+                    <use xlink:href="img/svg/sprite_auto.svg#twitter"></use>
+                  </svg>
+                  Twitter
+                </a>
+              </li>
+            </ul>
+    </section>
+  </footer>
+</body>
+
+
+
+</html>

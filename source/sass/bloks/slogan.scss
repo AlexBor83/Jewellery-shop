@@ -1,0 +1,53 @@
+.slogan {
+  background-color: $brown;
+  background-image: url("../img/index-img/background-main-desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 463px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-resolution: $retina-dpi-2) {
+  background-image: url("../img/index-img/background-main-desktop@2x.png");
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/index-img/background-main-tablet.png");
+
+    @media (min-resolution: $retina-dpi-2) {
+      background-image: url("../img/index-img/background-main-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/index-img/background-main-mobile.png");
+
+    @media (min-resolution: $retina-dpi-2) {
+      background-image: url("../img/index-img/background-main-mobile@2x.png");
+    }
+  }
+}
+
+.slogan__title {
+  margin: 0;
+  text-align: center;
+  font-family: $font-family--cormorantGaramond;
+  font-size: 45px;
+  line-height: 59px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $wight;
+}
+
+.slogan__text {
+  display: block;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 49px;
+  font-style: italic;
+  text-transform: lowercase;
+}

@@ -1,0 +1,57 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 115px;
+  border-bottom: 1px solid $greylight;
+}
+
+.header__svg {
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.header__input {
+  border: none;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+
+  }
+}
+
+.header__login,
+.header__cart {
+  color: $black-opopacity-01;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.header__login {
+  margin-right: 35px;
+}
+
+.header__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__item {
+  padding: 0;
+  padding: 18px 35px;
+}
+
+.header__link {
+  color: $black-opopacity-01;
+}
