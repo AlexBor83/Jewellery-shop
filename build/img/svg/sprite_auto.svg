@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-left" viewBox="0 0 30 11">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-form" viewBox="0 0 30 11">
+<path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="white"/>
+</symbol><symbol id="arrow-left" viewBox="0 0 30 11">
 <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
 </symbol><symbol id="facebook" viewBox="0 0 8 15">
 <path d="M5.33333 8.625H7.2381L8 5.625H5.33333V4.125C5.33333 3.3525 5.33333 2.625 6.85714 2.625H8V0.105C7.75162 0.0727501 6.81371 0 5.82324 0C3.75467 0 2.28571 1.24275 2.28571 3.525V5.625H0V8.625H2.28571V15H5.33333V8.625Z" fill="white"/>

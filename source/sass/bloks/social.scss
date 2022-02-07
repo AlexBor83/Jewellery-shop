@@ -1,0 +1,46 @@
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+
+    &--mobile {
+      display: flex;
+    }
+  }
+}
+
+.social__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.social__link {
+  color: $wight;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.social__svg {
+  margin-right: 15px;
+}

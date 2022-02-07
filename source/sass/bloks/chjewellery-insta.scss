@@ -1,0 +1,78 @@
+.chjewellery-insta {
+  margin-bottom: 131px;
+}
+
+.chjewellery-insta__title {
+  font-family: $font-family--cormorantGaramond;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.chjewellery-insta__link {
+  color: $black-opopacity-01;
+  display: block;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.chjewellery-insta__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 27px;
+
+  @media (max-width: $desktop-width) {
+    width: 678px;
+    grid-gap: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    grid-gap: 27px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chjewellery-insta__item {
+  width: 230px;
+
+  &--big {
+    width: 399px;
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 133px;
+
+    &--big {
+      width: 231px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &--big {
+      width: 133px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+
+
+

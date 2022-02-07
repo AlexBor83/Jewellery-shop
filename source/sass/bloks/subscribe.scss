@@ -1,0 +1,58 @@
+.subscribe__title {
+  margin: 0;
+  font-family: $font-family--cormorantGaramond;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.subscribe__text {
+  line-height: 21px;
+  color: $grey;
+  margin-bottom: 50px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $wight;
+  align-items: center;
+}
+
+.subscribe__input {
+  background-color: transparent;
+  border: none;
+  color: $grey;
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    color: $grey;
+  }
+}
+
+.subscribe__button {
+  border: none;
+  background-color: transparent;
+  color: $wight;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/svg/arrow-form.svg");
+    width: 28px;
+    height: 9px;
+    right: 0;
+    top: 30%;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
