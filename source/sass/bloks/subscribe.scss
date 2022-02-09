@@ -20,6 +20,12 @@
   align-items: center;
 }
 
+.subscribe__label {
+  @media (max-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
 .subscribe__input {
   background-color: transparent;
   border: none;

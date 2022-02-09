@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery-shop</title>
+  <!-- <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <!-- header--opened-menu -->
+  <header class="header header--opened-menu">
+    <div class="header__top ">
+      <div class="container header__container header__container--opened">
+        <button class="header__toggle" type="button" aria-label="Кнопка открытия меню"></button>
+        <form class="header__search">
+          <label class="header__label">
+            <svg class="header__svg header__svg--search" width="14" height="14" aria-hidden="true">
+              <use xlink:href="img/svg/sprite_auto.svg#search"></use>
+            </svg>
+            <input type="text" name="search" class="header__input" placeholder="Type here to search">
+          </label>
+          <button class="visually-hidden" type="submit">Кнопка поиска</button>
+        </form>
+        <div class="header__logo">
+          <a class="header__link" href="index.html">
+          <svg class="header__svg header__svg--logo" width="66" height="66" aria-hidden="true">
+            <use xlink:href="img/svg/sprite_auto.svg#logo"></use>
+          </svg>
+        </a>
+        </div>
+        <div class="header__user">
+          <a href="#" class="header__login">
+            <span class="header__login-text header__login-text--tablet">
+              Login
+            </span>
+          </a>
+          <a href="#" class="header__cart">
+            <span class="header__login-text">
+              Cart 0
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__botom">
+      <div class="container">
+        <!-- .header__nav--nojs header__nav--closed header__nav--opened-->
+        <nav class="header__nav header__nav--opened">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">
+                What's new
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Chokers
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Necklaces
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Rings
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                Earrings
+              </a>
+            </li>
+            <li class="header__item header__item--tablet">
+              <a href="#" class="header__link header__link--tablet">
+                About CH
+              </a>
+            </li>
+            <li class="header__item header__item--tablet">
+              <a href="#" class="header__link header__link--tablet">
+                Stores & Hours
+              </a>
+            </li>
+            <li class="header__item header__item--tablet">
+              <a href="#" class="header__link header__link--tablet">
+                Contact Us
+              </a>
+            </li>
+            <li class="header__item header__item--tablet">
+              <a href="#" class="header__link header__link--login header__link--tablet">
+                Login
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="slogan">
+      <h1 class="slogan__title">
+        PERFECTION
+        <span class="slogan__text">
+          made to be yours
+        </span>
+      </h1>
+    </section>
+
+    <div class="container">
+      <div class="catalog">
+        <div class="catalog__filter filter">
+          <form action="#" class="filter__form">
+          <fieldset class="filter__name">
+            <legend class="filter__legend">
+              Product
+            </legend>
+            <ul>
+              <li class="filter__checkbox">
+                <label class="filter__label">
+                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked>
+                  <span class="filter-checkbox-check"></span>
+                  Necklaces
+                </label>
+              </li>
+              <li class="filter__checkbox">
+                <label class="filter__label">
+                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked>
+                  <span class="filter-checkbox-check"></span>
+                  Chokers
+                </label>
+              </li>
+              <li class="filter__checkbox">
+                <label class="filter__label">
+                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked>
+                  <span class="filter-checkbox-check"></span>
+                  Rings
+                </label>
+              </li>
+              <li class="filter__checkbox">
+                <label class="filter__label">
+                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked>
+                  <span class="filter-checkbox-check"></span>
+                  Earrings
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__name">
+            <legend class="filter__legend">
+              Material
+            </legend>
+          </fieldset>
+
+          <fieldset class="filter__name">
+            <legend class="filter__legend">
+              Collection
+            </legend>
+          </fieldset>
+
+          <fieldset class="filter__name">
+            <legend class="filter__legend">
+              Price
+            </legend>
+            <div class="filter__range">
+              <div class="filter__controls">
+                <div class="filter__scale">
+                  <div class="filter__bar"></div>
+                </div>
+                <div class="filter__toggle filter__toggle--min"></div>
+                <div class="filter__toggle filter__toggle--max"></div>
+                <span class="filter__text">
+                  $55
+                </span>
+                <span class="filter__text">
+                  $155
+                </span>
+              </div>
+          </fieldset>
+
+          <button class="form__button form__active" type="button">
+            Apply
+          </button>
+          <button class="form__button" type="button">
+            Clear All
+          </button>
+          </form>
+        </div>
+        <div class="catalog__cards cards">
+
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/double-pearl-earrings-mobile.webp, img/catalog-img/double-pearl-earrings-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/double-pearl-earrings-tablet.webp, img/catalog-img/double-pearl-earrings-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/double-pearl-earrings-desktop.webp, img/catalog-img/double-pearl-earrings-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/double-pearl-earrings-mobile.jpg, img/catalog-img/double-pearl-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/double-pearl-earrings-tablet.jpg, img/catalog-img/double-pearl-earrings-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/double-pearl-earrings-desktop.jpg" srcset="img/catalog-img/double-pearl-earrings-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Double pearl earrings
+            </p>
+            <span class="card__price">
+              $ 115
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/layered-choker-mobile.webp, img/catalog-img/layered-choker-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/layered-choker-tablet.webp, img/catalog-img/layered-choker-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/layered-choker-desktop.webp, img/catalog-img/layered-choker-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/layered-choker-mobile.jpg, img/catalog-img/layered-choker-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/layered-choker-tablet.jpg, img/catalog-img/layered-choker-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/layered-choker-desktop.jpg" srcset="img/catalog-img/layered-choker-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Choker with gold bead
+            </p>
+            <span class="card__price">
+              $ 55
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/gold-layered-necklace-mobile.webp, img/catalog-img/gold-layered-necklace-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/gold-layered-necklace-tablet.webp, img/catalog-img/gold-layered-necklace-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/gold-layered-necklace-desktop.webp, img/catalog-img/gold-layered-necklace-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/gold-layered-necklace-mobile.jpg, img/catalog-img/gold-layered-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/gold-layered-necklace-tablet.jpg, img/catalog-img/gold-layered-necklace-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/gold-layered-necklace-desktop.jpg" srcset="img/catalog-img/gold-layered-necklace-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Gold layered necklace
+            </p>
+            <span class="card__price">
+              $ 155
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/blue-gemstone-mobile.webp, img/catalog-img/blue-gemstone-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/blue-gemstone-tablet.webp, img/catalog-img/blue-gemstone-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/blue-gemstone-desktop.webp, img/catalog-img/blue-gemstone-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/blue-gemstone-mobile.jpg, img/catalog-img/blue-gemstone-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/blue-gemstone-tablet.jpg, img/catalog-img/blue-gemstone-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/blue-gemstone-desktop.jpg" srcset="img/catalog-img/blue-gemstone-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Blue gemstone pendant
+            </p>
+            <span class="card__price">
+              $ 105
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/boho-earrings-mobile.webp, img/catalog-img/boho-earrings-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/boho-earrings-tablet.webp, img/catalog-img/boho-earrings-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/boho-earrings-desktop.webp, img/catalog-img/boho-earrings-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/boho-earrings-mobile.jpg, img/catalog-img/boho-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/boho-earrings-tablet.jpg, img/catalog-img/boho-earrings-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/boho-earrings-desktop.jpg" srcset="img/catalog-img/boho-earrings-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Boho earrings
+            </p>
+            <span class="card__price">
+              $ 75
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/bird-necklace-mobile.webp, img/catalog-img/bird-necklace-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/bird-necklace-tablet.webp, img/catalog-img/bird-necklace-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/bird-necklace-desktop.webp, img/catalog-img/bird-necklace-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/bird-necklace-mobile.jpg, img/catalog-img/bird-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/bird-necklace-tablet.jpg, img/catalog-img/bird-necklace-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/bird-necklace-desktop.jpg" srcset="img/catalog-img/bird-necklace-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Gold bird necklace
+            </p>
+            <span class="card__price">
+              $ 135
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/black-choker-mobile.webp, img/catalog-img/black-choker-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/black-choker-tablet.webp, img/catalog-img/black-choker-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/black-choker-desktop.webp, img/catalog-img/black-choker-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/black-choker-mobile.jpg, img/catalog-img/black-choker-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/black-choker-tablet.jpg, img/catalog-img/black-choker-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/black-choker-desktop.jpg" srcset="img/catalog-img/black-choker-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Black leather choker
+            </p>
+            <span class="card__price">
+              $ 85
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/necklace-mobile.webp, img/catalog-img/necklace-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/necklace-tablet.webp, img/catalog-img/necklace-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/necklace-desctop.webp, img/catalog-img/necklace-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/necklace-mobile.jpg, img/catalog-img/necklace-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/necklace-tablet.jpg, img/catalog-img/necklace-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/necklace-desctop.jpg" srcset="img/catalog-img/necklace-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Necklace with amethyst
+            </p>
+            <span class="card__price">
+              $ 145
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/elephant-earrings-mobile.webp, img/catalog-img/elephant-earrings-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/elephant-earrings-tablet.webp, img/catalog-img/elephant-earrings-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/elephant-earrings-desctop.webp, img/catalog-img/elephant-earrings-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/elephant-earrings-mobile.jpg, img/catalog-img/elephant-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/elephant-earrings-tablet.jpg, img/catalog-img/elephant-earrings-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/elephant-earrings-desctop.jpg" srcset="img/catalog-img/elephant-earrings-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Elephant earrings
+            </p>
+            <span class="card__price">
+              $ 95
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/threader-necklace-mobile.webp, img/catalog-img/threader-necklace-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/threader-necklace-tablet.webp, img/catalog-img/threader-necklace-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/threader-necklace-desctop.webp, img/catalog-img/threader-necklace-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/threader-necklace-mobile.jpg, img/catalog-img/threader-necklace-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/threader-necklace-tablet.jpg, img/catalog-img/threader-necklace-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/threader-necklace-desctop.jpg" srcset="img/catalog-img/threader-necklace-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Threader necklace
+            </p>
+            <span class="card__price">
+              $ 115
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/origami-crane-mobile.webp, img/catalog-img/origami-crane-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/origami-crane-tablet.webp, img/catalog-img/origami-crane-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/origami-crane-desctop.webp, img/catalog-img/origami-crane-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/origami-crane-mobile.jpg, img/catalog-img/origami-crane-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/origami-crane-tablet.jpg, img/catalog-img/origami-crane-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/origami-crane-desctop.jpg" srcset="img/catalog-img/origami-crane-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Origami crane necklace
+            </p>
+            <span class="card__price">
+              $ 105
+            </span>
+          </div>
+          <div class="card">
+            <div class="card__img">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/catalog-img/marble-earrings-mobile.webp, img/catalog-img/marble-earrings-mobile@2x.webp 2x">
+                <source media="(max-width: 1023px)" type="image/webp"
+                  srcset="img/catalog-img/marble-earrings-tablet.webp, img/catalog-img/marble-earrings-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog-img/marble-earrings-desctop.webp, img/catalog-img/marble-earrings-desctop@2x.webp 2x">
+                <source media="(max-width: 767px)"
+                  srcset="img/catalog-img/marble-earrings-mobile.jpg, img/catalog-img/marble-earrings-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)"
+                  srcset="img/catalog-img/marble-earrings-tablet.jpg, img/catalog-img/marble-earrings-tablet@2x.jpg 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <img src="img/catalog-img/marble-earrings-desctop.jpg" srcset="img/catalog-img/marble-earrings-desktop@2x.jpg 2x"
+                  alt="Картинка для блога" width="270" height="272">
+              </picture>
+            </div>
+            <p class="card__name">
+              Marble earrings
+            </p>
+            <span class="card__price">
+              $ 95
+            </span>
+          </div>
+
+          <div class="cards__navigation navigation">
+            <a class="navigation__page" href="#" >
+              Previous
+            </a>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                1
+              </li>
+              <li class="navigation__item">
+                2
+              </li>
+              <li class="navigation__item">
+                3
+              </li>
+              <li class="navigation__item">
+                4
+              </li>
+              <li class="navigation__item">
+                5
+              </li>
+            </ul>
+            <a class="navigation__page" href="#" >
+              Next
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <section class="footer__subscribe subscribe">
+        <h2 class="subscribe__title">
+          The good stuff in your inbox
+        </h2>
+        <p class="subscribe__text">
+          News and updates from CH. No spam, we promise.
+        </p>
+        <form class="subscribe__form">
+          <label class="subscribe__label">
+            <input type="email" name="mail" class="subscribe__input" placeholder="Your E-mail">
+          </label>
+          <button class="subscribe__button" type="submit">Sign Up</button>
+        </form>
+      </section>
+
+      <section class="footer__navigation navigation">
+        <h2 class="visually-hidden">
+          Разделы сайта
+        </h2>
+        <ul class="navigation__list">
+          <li>
+            <ul class="navigation__wrap">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Ordering & Payment
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Returns & Exchanges
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Delivery
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class=" navigation__wrap">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  About CH
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Stores & Hours
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Jobs
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__social social">
+        <h2 class="visually-hidden">
+          Социальные сети
+        </h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Facebook">
+              <svg class="social__svg" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#facebook"></use>
+              </svg>
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Instagram">
+              <svg class="social__svg" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#insta"></use>
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Pinterest">
+              <svg class="social__svg" width="15" height="15" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#pinterest"></use>
+              </svg>
+              Pinterest
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Twitter">
+              <svg class="social__svg" width="15" height="13" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#twitter"></use>
+              </svg>
+              Twitter
+            </a>
+          </li>
+        </ul>
+
+        <ul class="social__list social__list--mobile">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Facebook">
+              <svg class="social__svg" width="12" height="21" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Instagram">
+              <svg class="social__svg" width="20" height="21" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Pinterest">
+              <svg class="social__svg" width="20" height="21" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Twitter">
+              <svg class="social__svg" width="20" height="18" aria-hidden="true">
+                <use xlink:href="img/svg/sprite_auto.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
+
+
+
+      </section>
+    </div>
+
+  </footer>
+</body>
+
+</html>
