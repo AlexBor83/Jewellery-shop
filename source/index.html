@@ -13,7 +13,7 @@
 <body>
   <!-- header--opened-menu -->
   <header class="header header--opened-menu">
-    <div class="header__top ">
+    <div class="header__top">
       <div class="container header__container header__container--opened">
         <button class="header__toggle" type="button" aria-label="Кнопка открытия меню"></button>
         <form class="header__search">
@@ -30,8 +30,9 @@
             <use xlink:href="img/svg/sprite_auto.svg#logo"></use>
           </svg>
         </div>
+        <!-- Открыть modal-login - class "login-opened-js" -->
         <div class="header__user">
-          <a href="#" class="header__login">
+          <a href="#" class="header__login login-opened-js">
             <span class="header__login-text header__login-text--tablet">
               Login
             </span>
@@ -47,7 +48,7 @@
     <div class="header__botom">
       <div class="container">
         <!-- .header__nav--nojs header__nav--closed header__nav--opened-->
-        <nav class="header__nav header__nav--opened">
+        <nav class="header__nav header__nav--closed header__nav--nojs">
           <ul class="header__list">
             <li class="header__item">
               <a href="#" class="header__link">
@@ -90,7 +91,7 @@
               </a>
             </li>
             <li class="header__item header__item--tablet">
-              <a href="#" class="header__link header__link--login header__link--tablet">
+              <a href="#" class="header__link header__link--login header__link--tablet login-opened-js">
                 Login
               </a>
             </li>
@@ -208,7 +209,8 @@
                     <source type="image/webp"
                       srcset="img/index-img/galaxy-earrings-desktop.webp, img/index-img/galaxy-earrings-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/index-img/galaxy-earrings-desktop.jpg" srcset="img/index-img/galaxy-earrings-desktop@2x.jpg 2x" alt="Картинка для блога" width="230"
+                    <img src="img/index-img/galaxy-earrings-desktop.jpg"
+                      srcset="img/index-img/galaxy-earrings-desktop@2x.jpg 2x" alt="Картинка для блога" width="230"
                       height="230">
                   </picture>
                 </div>
@@ -303,7 +305,8 @@
                     <source type="image/webp"
                       srcset="img/index-img/galaxy-earrings-desktop.webp, img/index-img/galaxy-earrings-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/index-img/galaxy-earrings-desktop.jpg" srcset="img/index-img/galaxy-earrings-desktop@2x.jpg 2x" alt="Картинка для блога" width="230"
+                    <img src="img/index-img/galaxy-earrings-desktop.jpg"
+                      srcset="img/index-img/galaxy-earrings-desktop@2x.jpg 2x" alt="Картинка для блога" width="230"
                       height="230">
                   </picture>
                 </div>
@@ -398,7 +401,8 @@
                     <source type="image/webp"
                       srcset="img/index-img/galaxy-earrings-desktop.webp, img/index-img/galaxy-earrings-desktop@2x.webp 2x">
                     <!-- 1х: 270px; 2x: 540px -->
-                    <img src="img/index-img/galaxy-earrings-desktop.jpg" srcset="img/index-img/galaxy-earrings-desktop@2x.jpg 2x" alt="Картинка для блога" width="230"
+                    <img src="img/index-img/galaxy-earrings-desktop.jpg"
+                      srcset="img/index-img/galaxy-earrings-desktop@2x.jpg 2x" alt="Картинка для блога" width="230"
                       height="230">
                   </picture>
                 </div>
@@ -884,6 +888,49 @@
     </div>
 
   </footer>
+
+  <!-- modal--opened -->
+
+  <div class="modal modal--closed">
+
+    <div class="modal-wrap">
+      <button class="modal__buton" type="button" aria-label="Закрыть модальное окно"></button>
+      <section class="modal__content">
+        <form class="modal__form" action="#">
+          <h2 class="modal__title">
+            Log In
+          </h2>
+          <label class="modal__label modal__label--mail">
+            <input class="modal__input" type="email" placeholder="Your E-mail">
+          </label>
+          <label class="modal__label modal__label--password">
+            <input class="modal__input" type="password" placeholder="Password">
+          </label>
+          <span class="modal__word">
+            Forgot your password?
+          </span>
+          <button class="modal__send" type="submit" aria-label="Отправить форму">
+            Log In
+          </button>
+        </form>
+        <p class="modal__text">
+          Don't have an account?
+          <a class="modal__link" href="#">
+            Sign up
+          </a>
+        </p>
+      </section>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

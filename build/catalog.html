@@ -27,10 +27,10 @@
         </form>
         <div class="header__logo">
           <a class="header__link" href="index.html">
-          <svg class="header__svg header__svg--logo" width="66" height="66" aria-hidden="true">
-            <use xlink:href="img/svg/sprite_auto.svg#logo"></use>
-          </svg>
-        </a>
+            <svg class="header__svg header__svg--logo" width="66" height="66" aria-hidden="true">
+              <use xlink:href="img/svg/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
         </div>
         <div class="header__user">
           <a href="#" class="header__login">
@@ -104,11 +104,11 @@
 
   <main>
 
-    <section class="slogan">
+    <section class="slogan slogan--catalog">
       <h1 class="slogan__title">
-        PERFECTION
+        all jewellry
         <span class="slogan__text">
-          made to be yours
+          Discover picks of fashion's finest trends in our jewellery catalog
         </span>
       </h1>
     </section>
@@ -116,83 +116,100 @@
     <div class="container">
       <div class="catalog">
         <div class="catalog__filter filter">
-          <form action="#" class="filter__form">
-          <fieldset class="filter__name">
-            <legend class="filter__legend">
-              Product
-            </legend>
-            <ul>
-              <li class="filter__checkbox">
-                <label class="filter__label">
-                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked="">
-                  <span class="filter-checkbox-check"></span>
-                  Necklaces
-                </label>
-              </li>
-              <li class="filter__checkbox">
-                <label class="filter__label">
-                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked="">
-                  <span class="filter-checkbox-check"></span>
-                  Chokers
-                </label>
-              </li>
-              <li class="filter__checkbox">
-                <label class="filter__label">
-                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked="">
-                  <span class="filter-checkbox-check"></span>
-                  Rings
-                </label>
-              </li>
-              <li class="filter__checkbox">
-                <label class="filter__label">
-                  <input class="filter-checkbox-input" type="checkbox" name="bosch" checked="">
-                  <span class="filter-checkbox-check"></span>
-                  Earrings
-                </label>
-              </li>
-            </ul>
-          </fieldset>
 
-          <fieldset class="filter__name">
-            <legend class="filter__legend">
-              Material
-            </legend>
-          </fieldset>
+          <!-- filter__modal--active -->
 
-          <fieldset class="filter__name">
-            <legend class="filter__legend">
-              Collection
-            </legend>
-          </fieldset>
-
-          <fieldset class="filter__name">
-            <legend class="filter__legend">
-              Price
-            </legend>
-            <div class="filter__range">
-              <div class="filter__controls">
-                <div class="filter__scale">
-                  <div class="filter__bar"></div>
-                </div>
-                <div class="filter__toggle filter__toggle--min"></div>
-                <div class="filter__toggle filter__toggle--max"></div>
-                <span class="filter__text">
-                  $55
-                </span>
-                <span class="filter__text">
-                  $155
-                </span>
+          <div class="filter__modal ">
+            <button class="filter__button filter__dropdown filter__dropdown--open" type="button" aria-label="Кнопка открытия фильтра">
+              Filter
+            </button>
+            <!-- filter__form--closed filter__form--opened -->
+            <form action="#" class="filter__form filter__form--closed">
+              <button class="filter__dropdown filter__dropdown--close" type="button" aria-label="Кнопка закрытия фильтра"></button>
+              <div class="filter__wrap">
+                <fieldset class="filter__name">
+                  <legend class="filter__legend filter__legend--active">
+                    Product
+                  </legend>
+                  <ul class="filter__list">
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Necklaces" checked="">
+                        <span class="filter-checkbox-check"></span>
+                        Necklaces
+                      </label>
+                    </li>
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Chokers" checked="">
+                        <span class="filter-checkbox-check"></span>
+                        Chokers
+                      </label>
+                    </li>
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Rings">
+                        <span class="filter-checkbox-check"></span>
+                        Rings
+                      </label>
+                    </li>
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Earrings" checked="">
+                        <span class="filter-checkbox-check"></span>
+                        Earrings
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
-          </div></fieldset>
-
-          <button class="form__button form__active" type="button">
-            Apply
-          </button>
-          <button class="form__button" type="button">
-            Clear All
-          </button>
-          </form>
+              <div class="filter__wrap">
+                <fieldset class="filter__name">
+                  <legend class="filter__legend">
+                    Material
+                  </legend>
+                </fieldset>
+              </div>
+              <div class="filter__wrap">
+                <fieldset class="filter__name">
+                  <legend class="filter__legend">
+                    Collection
+                  </legend>
+                </fieldset>
+              </div>
+              <div class="filter__wrap filter__wrap--range">
+                <fieldset class="filter__name">
+                  <legend class="filter__legend filter__legend--active">
+                    Price
+                  </legend>
+                  <div class="filter__range">
+                    <div class="filter__controls">
+                      <div class="filter__scale">
+                        <div class="filter__bar"></div>
+                      </div>
+                      <div class="filter__toggle filter__toggle--min">
+                        <span class="filter__text">
+                          $55
+                        </span>
+                      </div>
+                      <div class="filter__toggle filter__toggle--max">
+                        <span class="filter__text">
+                          $155
+                        </span>
+                      </div>
+                    </div>
+                </div></fieldset>
+              </div>
+              <button class="filter__button filter__button--active" type="button">
+                Apply
+              </button>
+              <button class="filter__button" type="button">
+                Clear All
+              </button>
+            </form>
+          </div>
         </div>
+
         <div class="catalog__cards cards">
 
           <div class="card">
@@ -424,28 +441,38 @@
             </span>
           </div>
 
-          <div class="cards__navigation navigation">
-            <a class="navigation__page" href="#">
+          <div class="cards__pagination pagination">
+            <a class="pagination__page" href="#">
               Previous
             </a>
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                1
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                  1
+                </a>
               </li>
-              <li class="navigation__item">
-                2
+              <li class="pagination__item">
+                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                  2
+                </a>
               </li>
-              <li class="navigation__item">
-                3
+              <li class="pagination__item">
+                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                  3
+                </a>
               </li>
-              <li class="navigation__item">
-                4
+              <li class="pagination__item">
+                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                  4
+                </a>
               </li>
-              <li class="navigation__item">
-                5
+              <li class="pagination__item">
+                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                  5
+                </a>
               </li>
             </ul>
-            <a class="navigation__page" href="#">
+            <a class="pagination__page" href="#">
               Next
             </a>
           </div>
@@ -605,6 +632,9 @@
     </div>
 
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

@@ -11,23 +11,49 @@
   justify-content: center;
   align-items: center;
 
+  &--catalog {
+    background-image: url("../img/catalog-img/background-catalog-desktop.png");
+    min-height: 261px;
+    margin-bottom: 80px;
+  }
+
   @media (min-resolution: $retina-dpi-2) {
-  background-image: url("../img/index-img/background-main-desktop@2x.png");
+    background-image: url("../img/index-img/background-main-desktop@2x.png");
+
+    &--catalog {
+      background-image: url("../img/catalog-img/background-catalog-desktop@2x.png");
+    }
   }
 
   @media (max-width: $desktop-width) {
     background-image: url("../img/index-img/background-main-tablet.png");
 
+    &--catalog {
+      background-image: url("../img/catalog-img/background-catalog-tablet.png");
+    }
+
     @media (min-resolution: $retina-dpi-2) {
       background-image: url("../img/index-img/background-main-tablet@2x.png");
+
+      &--catalog {
+        background-image: url("../img/catalog-img/background-catalog-tablet@2x.png");
+      }
     }
   }
 
   @media (max-width: $tablet-width) {
     background-image: url("../img/index-img/background-main-mobile.png");
 
+    &--catalog {
+      background-image: url("../img/catalog-img/background-catalog-mobile.png");
+    }
+
     @media (min-resolution: $retina-dpi-2) {
       background-image: url("../img/index-img/background-main-mobile@2x.png");
+
+      &--catalog {
+        background-image: url("../img/catalog-img/background-catalog-mobile@2x.png");
+      }
     }
   }
 }

@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
+}
+
+.pagination__page {
+  color: $black-opopacity-01;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+}
+
+.pagination__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__item {
+  padding-left: 10px;
+}
+
+.pagination__link {
+  color: $grey;
+
+  &:hover,
+  &:focus {
+    color: $black-opopacity-01;
+  }
+}
+
+

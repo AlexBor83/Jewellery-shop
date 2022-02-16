@@ -1,0 +1,14 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.cards__pagination {
+  grid-column: 1/-1;
+}

@@ -12,9 +12,15 @@
 
 
 
+@import "bloks/catalog.scss";
+@import "bloks/filter.scss";
+
+@import "bloks/cards.scss";
 
 
 @import "bloks/card.scss";
+@import "bloks/pagination.scss";
+
 
 @import "bloks/blogs.scss";
 @import "bloks/blog.scss";
@@ -29,6 +35,10 @@
 @import "bloks/subscribe.scss";
 @import "bloks/navigation.scss";
 @import "bloks/social.scss";
+
+@import "bloks/modal.scss";
+
+
 
 
 

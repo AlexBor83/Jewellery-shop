@@ -1,0 +1,188 @@
+// .filter__modal {
+
+//     @media (max-width: $desktop-width) {
+//     width: 100%;
+//     height: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     background-color: $grey;
+//     z-index: 200;
+//     overflow-y: auto;
+//     overflow-x: hidden;
+//     display: none;
+
+//     &--active {
+//       display: block;
+//     }
+//   }
+// }
+
+.filter__dropdown {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.filter__form {
+  @media (max-width: $desktop-width) {
+    width: 50%;
+
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      position: fixed;
+      background-color: $wight;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 40px;
+      padding-right: 200px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.filter__wrap {
+  border: 1px solid $brown;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 25px;
+
+  &--range {
+    margin-bottom: 35px;
+  }
+}
+
+.filter__name {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter__legend {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/svg/pointer-up.svg");
+    background-repeat: no-repeat;
+    transform-origin: center center;
+    transform: rotate(180deg);
+    width: 15px;
+    height: 8px;
+    top: 5px;
+    right: 20px;
+  }
+
+  &--active {
+    &::after {
+      transform: rotate(0deg);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.filter__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.filter__checkbox {
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-checkbox-input {
+  display: none;
+}
+
+.filter-checkbox-check {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 15px;
+  border: 1px solid $brown;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.filter-checkbox-input:checked + .filter-checkbox-check {
+  background-color: $brown;
+}
+
+.filter__controls {
+  position: relative;
+  padding: 32px 20px 23px 23px;
+}
+
+.filter__scale {
+  height: 1px;
+  background-color: $grey;
+}
+
+.filter__bar {
+  position: absolute;
+  right: 40px;
+  height: 1px;
+  background-color: $brown;
+  padding-left: 30px;
+  width: 50%;
+}
+
+.filter__toggle {
+  width: 4px;
+  height: 4px;
+  background-color: $brown;
+  border: 8px solid $brown;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 18px;
+  cursor: pointer;
+
+  &--max {
+    left: 60px;
+  }
+}
+
+.filter__text {
+  position: absolute;
+  left: -20px;
+  top: 10px;
+}
+
+.filter__button {
+  border: 1px solid $brown;
+  width: 100%;
+  background-color: $wight;
+  padding: 28px 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $brown;
+    color: $wight;
+  }
+}
