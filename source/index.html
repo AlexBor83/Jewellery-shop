@@ -32,7 +32,7 @@
         </div>
         <!-- Открыть modal-login - class "login-opened-js" -->
         <div class="header__user">
-          <a href="#" class="header__login login-opened-js">
+          <a href="modal-login.html" class="header__login login-opened-js">
             <span class="header__login-text header__login-text--tablet">
               Login
             </span>
@@ -91,7 +91,7 @@
               </a>
             </li>
             <li class="header__item header__item--tablet">
-              <a href="#" class="header__link header__link--login header__link--tablet login-opened-js">
+              <a href="modal-login.html" class="header__link header__link--login header__link--tablet login-opened-js">
                 Login
               </a>
             </li>
@@ -561,37 +561,46 @@
         </h2>
         <ul class="asked-questions__list">
           <li class="asked-questions__item">
-            <p class="asked-questions__text">
+            <button class="asked-questions__button asked-questions__button--active" type="button"
+              aria-label="Показать/скрыть ответ">
               What materials are the jewellery made of?
-            </p>
-            <p class="asked-questions__answer">
+            </button>
+            <!-- asked-questions__answer--active - открыть ответ
+            asked-questions__answer--close - закрыть ответ -->
+            <p class="asked-questions__answer asked-questions__answer--active">
               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.
             </p>
           </li>
           <li class="asked-questions__item">
-            <p class="asked-questions__text">
+            <button class="asked-questions__button" type="button" aria-label="Показать/скрыть ответ">
               Which countries do you deliver to?
-            </p>
-            <p class="asked-questions__answer asked-questions__answer--none">
+            </button>
+            <!-- asked-questions__answer--active - открыть ответ
+            asked-questions__answer--close - закрыть ответ -->
+            <p class="asked-questions__answer asked-questions__answer--close">
               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.
             </p>
           </li>
           <li class="asked-questions__item">
-            <p class="asked-questions__text">
-              Which countries do you deliver to?
-            </p>
-            <p class="asked-questions__answer asked-questions__answer--none">
+            <button class="asked-questions__button" type="button" aria-label="Показать/скрыть ответ">
+              What are the payment methods?
+            </button>
+            <!-- asked-questions__answer--active - открыть ответ
+            asked-questions__answer--close - закрыть ответ -->
+            <p class="asked-questions__answer asked-questions__answer--close">
               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.
             </p>
           </li>
           <li class="asked-questions__item">
-            <p class="asked-questions__text">
+            <button class="asked-questions__button" type="button" aria-label="Показать/скрыть ответ">
               Can I return the jewellery if it didn't fit me?
-            </p>
-            <p class="asked-questions__answer asked-questions__answer--none">
+            </button>
+            <!-- asked-questions__answer--active - открыть ответ
+            asked-questions__answer--close - закрыть ответ -->
+            <p class="asked-questions__answer asked-questions__answer--close">
               Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and
               semiprecious stones and crystals.
             </p>
@@ -894,7 +903,7 @@
   <div class="modal modal--closed">
 
     <div class="modal-wrap">
-      <button class="modal__buton" type="button" aria-label="Закрыть модальное окно"></button>
+      <button class="modal__button" type="button" aria-label="Закрыть модальное окно"></button>
       <section class="modal__content">
         <form class="modal__form" action="#">
           <h2 class="modal__title">
@@ -929,7 +938,7 @@
 
   </div>
 
-
+  <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
 </body>
 

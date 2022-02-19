@@ -32,8 +32,9 @@
             </svg>
           </a>
         </div>
+        <!-- Открыть modal-login - class "login-opened-js" -->
         <div class="header__user">
-          <a href="#" class="header__login">
+          <a href="modal-login.html" class="header__login login-opened-js">
             <span class="header__login-text header__login-text--tablet">
               Login
             </span>
@@ -92,7 +93,7 @@
               </a>
             </li>
             <li class="header__item header__item--tablet">
-              <a href="#" class="header__link header__link--login header__link--tablet">
+              <a href="modal-login.html" class="header__link header__link--login header__link--tablet login-opened-js">
                 Login
               </a>
             </li>
@@ -168,6 +169,22 @@
                   <legend class="filter__legend">
                     Material
                   </legend>
+                  <ul class="filter__list">
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Necklaces">
+                        <span class="filter-checkbox-check"></span>
+                        Gold
+                      </label>
+                    </li>
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Chokers">
+                        <span class="filter-checkbox-check"></span>
+                        Silver
+                      </label>
+                    </li>
+                  </ul>
                 </fieldset>
               </div>
               <div class="filter__wrap">
@@ -175,7 +192,22 @@
                   <legend class="filter__legend">
                     Collection
                   </legend>
-                </fieldset>
+                  <ul class="filter__list">
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Necklaces">
+                        <span class="filter-checkbox-check"></span>
+                        Pink flamingo
+                      </label>
+                    </li>
+                    <li class="filter__checkbox">
+                      <label class="filter__label">
+                        <input class="filter-checkbox-input" type="checkbox" name="Chokers">
+                        <span class="filter-checkbox-check"></span>
+                        Dreams
+                      </label>
+                    </li>
+                </ul></fieldset>
               </div>
               <div class="filter__wrap filter__wrap--range">
                 <fieldset class="filter__name">
@@ -633,8 +665,42 @@
 
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- modal--opened -->
 
-</body>
+  <div class="modal modal--closed">
+
+    <div class="modal-wrap">
+      <button class="modal__button" type="button" aria-label="Закрыть модальное окно"></button>
+      <section class="modal__content">
+        <form class="modal__form" action="#">
+          <h2 class="modal__title">
+            Log In
+          </h2>
+          <label class="modal__label modal__label--mail">
+            <input class="modal__input" type="email" placeholder="Your E-mail">
+          </label>
+          <label class="modal__label modal__label--password">
+            <input class="modal__input" type="password" placeholder="Password">
+          </label>
+          <span class="modal__word">
+            Forgot your password?
+          </span>
+          <button class="modal__send" type="submit" aria-label="Отправить форму">
+            Log In
+          </button>
+        </form>
+        <p class="modal__text">
+          Don't have an account?
+          <a class="modal__link" href="#">
+            Sign up
+          </a>
+        </p>
+      </section>
+
+    </div>
+
+  <script src="js/script.js"></script> -->
+
+</div></body>
 
 </html>

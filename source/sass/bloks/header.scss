@@ -1,5 +1,9 @@
 .header {
 
+  &--page {
+    background-color: $brownlight;
+  }
+
   @media (max-width: $desktop-width) {
     &--opened-menu {
       background-color: $brown;
@@ -87,6 +91,14 @@
 .header__label {
   @media (max-width: $desktop-width) {
     display: block;
+  }
+}
+
+.header__logo {
+  &--page {
+    padding-top: 20px;
+    text-align: center;
+
   }
 }
 

@@ -16,6 +16,13 @@
   &--opened {
     display: block;
   }
+
+  &--page {
+    display: block;
+    position: static;
+    background-color: $brownlight;
+
+  }
 }
 
 .modal-wrap {
@@ -29,7 +36,7 @@
   margin: 0 auto;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -50%);
 
   @media (max-width: $desktop-width) {
     background-image: url(../img/index-img/background-login-tablet.png);
@@ -42,7 +49,7 @@
   }
 }
 
-.modal__buton {
+.modal__button {
   display: block;
   width: 20px;
   height: 20px;
@@ -76,6 +83,10 @@
   &:focus {
     opacity: 0.5;
   }
+}
+
+.modal--page .modal__button {
+  display: none;
 }
 
 .modal__content {

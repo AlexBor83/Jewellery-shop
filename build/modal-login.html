@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewellery-shop</title>
+  <!-- <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header header--page">
+        <div class="header__logo header__logo--page">
+          <a class="header__link" href="index.html">
+            <svg class="header__svg header__svg--logo" width="66" height="66" aria-hidden="true">
+              <use xlink:href="img/svg/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+  </header>
+
+  <div class="modal modal--page">
+    <div class="modal-wrap modal-wrap--page">
+      <button class="modal__button" type="button" aria-label="Закрыть модальное окно"></button>
+      <section class="modal__content">
+        <form class="modal__form" action="#">
+          <h2 class="modal__title">
+            Log In
+          </h2>
+          <label class="modal__label modal__label--mail">
+            <input class="modal__input" type="email" placeholder="Your E-mail">
+          </label>
+          <label class="modal__label modal__label--password">
+            <input class="modal__input" type="password" placeholder="Password">
+          </label>
+          <span class="modal__word">
+            Forgot your password?
+          </span>
+          <button class="modal__send" type="submit" aria-label="Отправить форму">
+            Log In
+          </button>
+        </form>
+        <p class="modal__text">
+          Don't have an account?
+          <a class="modal__link" href="#">
+            Sign up
+          </a>
+        </p>
+      </section>
+    </div>
+</div></body>
+</html>
+
