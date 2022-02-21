@@ -6,10 +6,10 @@
 .footer__container {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 15px;
+  padding: 91px 15px;
 
   @media (max-width: $desktop-width) {
-    padding: 60px 150px 60px 45px;
+    padding: 50px 150px 60px 45px;
     margin-right: auto;
   }
 
@@ -21,12 +21,14 @@
 
 .footer__subscribe {
   flex-basis: 50%;
-  margin-right: 88px;
+  margin-right: 6px;
+  padding-right: 86px;
 
   @media (max-width: $desktop-width) {
     flex-basis: 100%;
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    padding-right: 15px;
   }
 
   @media (max-width: $tablet-width) {

@@ -1,16 +1,24 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 270px;
+  width: 270px;
+
+  @media (max-width: $desktop-width) {
+    width: 324px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 130px;
+  }
 }
 
 .card__img {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
-// .card__img img {
-//   width: 100%;
-// }
+.card__img img {
+  width: 100%;
+}
 
 .card__name,
 .card__price {
@@ -20,7 +28,7 @@
 }
 
 .card__name {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .card__price {

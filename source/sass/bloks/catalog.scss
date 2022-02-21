@@ -4,7 +4,7 @@
   margin-bottom: 80px;
 
   @media (max-width: $desktop-width) {
-     flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -15,7 +15,4 @@
   @media (max-width: $desktop-width) {
     width: 100%;
   }
-
 }
-
-

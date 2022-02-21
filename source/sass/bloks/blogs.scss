@@ -1,5 +1,9 @@
 .blogs {
-  margin-bottom: 130px;
+  margin-bottom: 115px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .blogs__wrap {
@@ -12,18 +16,17 @@
   font-size: 34px;
   line-height: 44px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .blogs__link {
   color: $black-opopacity-01;
   display: block;
-  margin-bottom: 70px;
+  margin-bottom: 63px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 60px;
   }
-
 }
 
 .blogs__list {
@@ -32,11 +35,13 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
+  row-gap: 24px;
+  column-gap: 27px;
 
   @media (max-width: $desktop-width) {
     grid-template-columns: repeat(1, 1fr);
     width: 678px;
+    row-gap: 46px;
   }
 
   @media (max-width: $tablet-width) {
@@ -44,5 +49,3 @@
     grid-gap: 40px;
   }
 }
-
-

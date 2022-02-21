@@ -1,7 +1,5 @@
 'use strict';
 
-//console.log('Привет');
-
 // Бургер
 
 const header = document.querySelector('.header');
@@ -107,7 +105,6 @@ const loginModalController = () => {
 
 loginModalController();
 
-
 //asked-questions--active Показать ответ в блоке вопросы и ответы
 
 const askedQuestionsList = document.querySelector('.asked-questions__list');
@@ -161,55 +158,66 @@ const toggleAnswer = () => {
 
 toggleAnswer();
 
+// swiper
 
-// const toggleFooterMenu = () => {
-//   if (!footerSection) {
-//     return;
-//   }
-//   footerButtons.forEach((item, number) =>{
-//     item.addEventListener('click', (evt) => {
+new Swiper('.swiper', {
 
-//       if (evt.target === item) {
-//         if (footerLists[number].classList.contains('close-menu')) {
-//           closeFooterMenu();
-//           showFooterMenuItem(number);
-//         } else {
-//           closeFooterMenuItem(number);
-//         }
-//       }
-//     });
-//   });
-// };
+  //стрелки
 
+  navigation: {
+    nextEl: `.swiper-button-prev`,
+    prevEl: `.swiper-button-next`,
+  },
 
+  //Пагинация
 
+  pagination: {
+    el: '.swiper-pagination',
 
-// const footerButtons = document.querySelectorAll('.footer__button');
-// const footerSection = document.querySelectorAll('.footer__section');
-// const footerLists = document.querySelectorAll('.footer__list');
+    clickable: true,
 
-// const showFooterMenuItem = (i) => {
+    // пвгинация цифрми
 
-//   footerLists[i].classList.remove('close-menu');
-//   footerLists[i].classList.add('open-menu');
-//   footerButtons[i].classList.remove('footer__button--clouse');
-// };
+    renderBullet: function (index, className) {
+      return '<span class ="' + className + '">' + (index + 1) + '</span>';
+    },
+  },
 
-// const closeFooterMenuItem = (i) => {
-//   footerLists[i].classList.add('close-menu');
-//   footerLists[i].classList.remove('open-menu');
-//   footerButtons[i].classList.add('footer__button--clouse');
-// };
+  //колличество показываемыхслайдов
+  slidesPerView: 2,
 
-// const closeFooterMenu = () => {
-//   footerLists.forEach((i) => {
-//     i.classList.add('close-menu');
-//     i.classList.remove('open-menu');
-//   });
+  //количество перелистываемых слайдов
+  slidesPerGroup: 2,
 
-//   footerButtons.forEach((i) =>{
-//     i.classList.add('footer__button--clouse');
-//   });
-// };
+  breakpoints: {
+    1023: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+    },
+  },
 
+  //отключить тач на компе
+  simulateTouch: false,
 
+  //упрравление слйдером с клавиатуры
+  keyboard: {
+
+    //включить управление
+    enabled: true,
+
+    //управление когда слайдер видим
+    onlyInViewport: true,
+
+    //добавить в управление PageUp b PageDown
+    pageUpDown: true,
+  },
+
+  //Отступ между слайдами
+  spaceBetween: 30,
+
+  //Бесконечная прокрутка
+  loop: true,
+
+  //скорость переключения слайдов
+  speed: 1000,
+});

@@ -1,5 +1,9 @@
 .chjewellery-insta {
-  margin-bottom: 131px;
+  margin-bottom: 127px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .chjewellery-insta__title {
@@ -9,7 +13,7 @@
   line-height: 44px;
   text-align: center;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
 }
 
 .chjewellery-insta__link {
@@ -18,7 +22,11 @@
   width: 100px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 
   @media (max-width: $tablet-width) {
     margin-bottom: 56px;
@@ -72,7 +80,3 @@
     }
   }
 }
-
-
-
-
