@@ -6,8 +6,7 @@
   left: 0;
   background-color: $grey;
   z-index: 200;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
 
   &--closed {
     display: none;
@@ -21,7 +20,6 @@
     display: block;
     position: static;
     background-color: $brownlight;
-
   }
 }
 
@@ -35,7 +33,7 @@
   position: absolute;
   margin: 0 auto;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
 
   @media (max-width: $desktop-width) {
@@ -91,6 +89,12 @@
 
 .modal__content {
   padding: 200px 45px 60px 45px;
+
+  @media (max-width: $tablet-width) {
+    padding: 160px 15px 40px 15px;
+  }
+
+
 }
 
 .modal__form {
@@ -104,6 +108,11 @@
   line-height: 44px;
   margin: 0;
   margin-bottom: 45px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 
 .modal__label {
@@ -112,10 +121,6 @@
   &--mail {
     margin-bottom: 40px;
   }
-
-  // &--password {
-  //   position: relative;
-  // }
 }
 
 .modal__input {
@@ -154,6 +159,7 @@
   color: $grey;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
 
 .modal__link {

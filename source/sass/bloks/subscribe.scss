@@ -5,6 +5,11 @@
   line-height: 44px;
   font-weight: 700;
   margin-bottom: 8px;
+
+  @media (max-width: $tablet-width) {
+
+
+  }
 }
 
 .subscribe__text {
@@ -23,7 +28,7 @@
 
 .subscribe__label {
   @media (max-width: $tablet-width) {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -31,6 +36,10 @@
   background-color: transparent;
   border: none;
   color: $grey;
+
+  @media (max-width: $tablet-width) {
+    width: 60%;
+  }
 
   &::placeholder {
     font-size: 14px;

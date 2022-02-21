@@ -248,6 +248,9 @@
     bottom: 38px;
   }
 
+  @media (max-width: $tablet-width) {
+    bottom: 49px;
+  }
 }
 /* Bullets */
 .swiper-pagination-bullets-dynamic {

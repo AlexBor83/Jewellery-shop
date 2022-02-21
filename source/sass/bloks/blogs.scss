@@ -4,6 +4,10 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 65px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 89px;
+  }
 }
 
 .blogs__wrap {
@@ -25,7 +29,7 @@
   margin-bottom: 63px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 }
 
@@ -46,6 +50,6 @@
 
   @media (max-width: $tablet-width) {
     width: 290px;
-    grid-gap: 40px;
+    grid-gap: 35px;
   }
 }

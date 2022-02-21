@@ -27,6 +27,7 @@ const menuController = () => {
   }
 
   headerNav.classList.remove('header__nav--nojs');
+  header.classList.remove('header--nojs');
 
   headerToggle.addEventListener('click', () => {
     if (headerNav.classList.contains('header__nav--closed')) {

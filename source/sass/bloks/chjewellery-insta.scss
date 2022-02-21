@@ -4,6 +4,10 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 76px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .chjewellery-insta__title {
@@ -48,7 +52,7 @@
 
   @media (max-width: $tablet-width) {
     width: 290px;
-    grid-gap: 27px;
+    grid-gap: 22px;
     grid-template-columns: repeat(2, 1fr);
   }
 }

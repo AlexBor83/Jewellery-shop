@@ -34,11 +34,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 30px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-right: 20px;
   }
 }
 

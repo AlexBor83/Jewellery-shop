@@ -11,8 +11,8 @@
 
   @media (max-width: $tablet-width) {
     width: 290px;
+    margin-bottom: 5px;
   }
-
 }
 
 .slider__title {
@@ -48,8 +48,6 @@
   @media (max-width: $tablet-width) {
     padding-top: 0;
   }
-
-
 }
 
 .slider__wrapper {
