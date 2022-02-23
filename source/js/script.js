@@ -222,3 +222,73 @@ new Swiper('.swiper', {
   //скорость переключения слайдов
   speed: 1000,
 });
+
+//фильтр
+
+// Открытие пунктов меню фильтра
+
+const filter = document.querySelector('.filter');
+const filterLegends = document.querySelectorAll('.filter__legend');
+const filterButtonClear = document.querySelector('.filter__button--clear');
+const filterCheckbox = document.querySelectorAll('.filter-checkbox-input');
+
+console.log(filterLegends[1]);
+
+const filterLegendShow = (i) => {
+  filterLegends[i].classList.remove('filter__legend--close');
+  filterLegends[i].classList.add('filter__legend--active');
+};
+
+const filterLegendClose = (i) => {
+  filterLegends[i].classList.remove('filter__legend--active');
+  filterLegends[i].classList.add('filter__legend--close');
+};
+
+const filterLegendCloseAll = () => {
+  filterLegends.forEach((i) =>{
+    i.classList.remove('filter__legend--active');
+    i.classList.add('filter__legend--close');
+  });
+};
+
+const toggleFilterLegend = () => {
+  if(!filter) {
+    return;
+  }
+
+  filterLegends.forEach((item, number) => {
+    item.addEventListener('click', (evt) => {
+      if(evt.target === item) {
+
+        if(filterLegends[number].classList.contains('filter__legend--close')) {
+          filterLegendCloseAll();
+          filterLegendShow(number);
+
+        } else {
+          filterLegendClose(number);
+        }
+      }
+    });
+  });
+};
+
+toggleFilterLegend();
+
+// сброс чекбоксов
+
+
+
+const filterCheckboxClearAll = () => {
+
+  if(!filter) {
+    return;
+  }
+
+  filterButtonClear.addEventListener('click', () => {
+    filterCheckbox.forEach((i) =>{
+      i.removeAttribute('checked');
+    });
+  });
+};
+
+filterCheckboxClearAll();

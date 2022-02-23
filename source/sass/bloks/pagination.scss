@@ -29,6 +29,10 @@
 
 .pagination__item {
   padding-left: 10px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .pagination__link {

@@ -106,9 +106,9 @@
   <main>
 
     <section class="slogan slogan--catalog">
-      <h1 class="slogan__title">
+      <h1 class="slogan__title slogan__title--catalog">
         all jewellry
-        <span class="slogan__text">
+        <span class="slogan__text slogan__text--catalog">
           Discover picks of fashion's finest trends in our jewellery catalog
         </span>
       </h1>
@@ -131,6 +131,8 @@
                 aria-label="Кнопка закрытия фильтра"></button>
               <div class="filter__wrap">
                 <fieldset class="filter__name">
+
+                  <!-- filter__legend--active  filter__legend--close-->
                   <legend class="filter__legend filter__legend--active">
                     Product
                   </legend>
@@ -168,7 +170,7 @@
               </div>
               <div class="filter__wrap">
                 <fieldset class="filter__name">
-                  <legend class="filter__legend">
+                  <legend class="filter__legend filter__legend--close">
                     Material
                   </legend>
                   <ul class="filter__list">
@@ -191,7 +193,7 @@
               </div>
               <div class="filter__wrap">
                 <fieldset class="filter__name">
-                  <legend class="filter__legend">
+                  <legend class="filter__legend filter__legend--close">
                     Collection
                   </legend>
                   <ul class="filter__list">
@@ -237,7 +239,7 @@
               <button class="filter__button filter__button--active" type="button">
                 Apply
               </button>
-              <button class="filter__button" type="button">
+              <button class="filter__button filter__button--clear" type="button">
                 Clear All
               </button>
             </form>
@@ -784,7 +786,8 @@
 
     </div>
 
-  <script src="js/script.js"></script> -->
+    <script src="js/vendor.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

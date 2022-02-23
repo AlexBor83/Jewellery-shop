@@ -37,6 +37,10 @@
     flex-direction: column;
     padding: 30px 45px 55px 45px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 15px 45px 15px;
+  }
 }
 
 .header__toggle {
@@ -275,6 +279,10 @@
     flex-direction: column;
     padding-left: 45px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .header__item {
@@ -290,6 +298,16 @@
     padding-bottom: 40px;
     &--tablet {
       display: block;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+
+    &--tablet {
+      font-size: 18px;
+      line-height: 23px;
     }
   }
 }

@@ -12,6 +12,16 @@
   }
 }
 
+.cards .card {
+  @media (max-width: $desktop-width) {
+    width: 206px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 130px;
+  }
+}
+
 .card__img {
   margin-bottom: 16px;
 }
