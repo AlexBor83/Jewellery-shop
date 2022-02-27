@@ -4,9 +4,8 @@
 
 const header = document.querySelector('.header');
 const headerNav = document.querySelector('.header__nav');
+const headerItems = document.querySelectorAll('.header__item');
 const headerToggle = document.querySelector('.header__toggle');
-
-console.log(header);
 
 const openHeader = () =>{
   header.classList.add('header--opened-menu');
@@ -21,7 +20,6 @@ const closeHeader = () => {
 };
 
 const menuController = () => {
-
   if (!header) {
     return;
   }
@@ -35,12 +33,17 @@ const menuController = () => {
       openHeader();
       return;
     }
-
     closeHeader();
+  });
+
+  headerItems.forEach((i) => {
+    i.addEventListener('click', () => {
+      closeHeader();
+    });
   });
 };
 
-  menuController();
+menuController();
 
 // modal-login
 
@@ -65,7 +68,6 @@ const modalClose = () => {
 };
 
 const loginModalController = () => {
-
   if(!loginModal) {
     return;
   }
@@ -125,7 +127,6 @@ const answerCloseItem = (i) => {
 };
 
 const answerClose = () =>{
-
   askedQuestionsAnswers.forEach((i) => {
     i.classList.remove('asked-questions__answer--active');
     i.classList.add('asked-questions__answer--close');
@@ -137,7 +138,6 @@ const answerClose = () =>{
 };
 
 const toggleAnswer = () => {
-
   if (!askedQuestionsList) {
     return;
   }
@@ -152,7 +152,7 @@ const toggleAnswer = () => {
         } else {
           answerCloseItem(number);
         }
-        }
+      }
     });
   });
 };
@@ -225,19 +225,22 @@ new Swiper('.swiper', {
 
 //фильтр
 
-// Открытие пунктов меню фильтра
-
 const filter = document.querySelector('.filter');
+const filterModal = document.querySelector('.filter__modal');
+const filterOpen = document.querySelector('.filter__open');
+const filterClose = document.querySelector('.filter__close');
+const filterForm = document.querySelector('.filter__form');
 const filterLegends = document.querySelectorAll('.filter__legend');
 const filterButtonClear = document.querySelector('.filter__button--clear');
-const filterCheckbox = document.querySelectorAll('.filter-checkbox-input')
+const filterButtonPush = document.querySelector('.filter__button--active');
+const filterCheckbox = document.querySelectorAll('.filter-checkbox-input');
 
-console.log(filterLegends[1]);
+// Открытие пунктов меню фильтра
 
 const filterLegendShow = (i) => {
   filterLegends[i].classList.remove('filter__legend--close');
   filterLegends[i].classList.add('filter__legend--active');
-}
+};
 
 const filterLegendClose = (i) => {
   filterLegends[i].classList.remove('filter__legend--active');
@@ -276,8 +279,6 @@ toggleFilterLegend();
 
 // сброс чекбоксов
 
-
-
 const filterCheckboxClearAll = () => {
 
   if(!filter) {
@@ -286,10 +287,64 @@ const filterCheckboxClearAll = () => {
 
   filterButtonClear.addEventListener('click', () => {
     filterCheckbox.forEach((i) =>{
-      i.removeAttribute('checked');
+      i.checked=false;//i.removeAttribute('checked')
     });
   });
 };
 
 filterCheckboxClearAll();
 
+// фильтр modal
+
+const filterModalOpen = () => {
+  filterModal.classList.remove('filter__modal--passive');
+  filterModal.classList.add('filter__modal--active');
+  filterForm.classList.remove('filter__form--closed');
+  filterForm.classList.add('filter__form--opened');
+  body.classList.add('body__fixed-page');
+};
+
+const filterModalClose = () => {
+  filterModal.classList.remove('filter__modal--active');
+  filterModal.classList.add('filter__modal--passive');
+  filterForm.classList.remove('filter__form--opened');
+  filterForm.classList.add('filter__form--closed');
+  body.classList.remove('body__fixed-page');
+};
+
+const filterModalController = () => {
+  if (!filter) {
+    return;
+  }
+
+  filterOpen.addEventListener('click', () =>{
+
+    if (filterModal.classList.contains('filter__modal--passive')) {
+
+      filterModalOpen();
+
+      document.addEventListener('keydown', (evt) =>{
+        if (evt.key === ('Escape' || 'Esc')) {
+          evt.preventDefault();
+          filterModalClose();
+        }
+      });
+
+      filterModal.addEventListener('click', (evt) => {
+        if (!evt.target.closest('.filter__form')) {
+          filterModalClose();
+        }
+      });
+
+      filterButtonPush.addEventListener('click', () => {
+        filterModalClose();
+      });
+    }
+  });
+
+  filterClose.addEventListener('click', () => {
+    filterModalClose();
+  });
+};
+
+filterModalController();

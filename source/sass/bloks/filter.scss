@@ -1,24 +1,19 @@
-// .filter__modal {
+.filter__button {
+  border: 1px solid $brown;
+  width: 100%;
+  background-color: $wight;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+  cursor: pointer;
 
-//     @media (max-width: $desktop-width) {
-//     width: 100%;
-//     height: 100%;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     background-color: $grey;
-//     z-index: 200;
-//     overflow-y: auto;
-//     overflow-x: hidden;
-//     display: none;
+  &:hover,
+  &:focus {
+    background-color: $brown;
+    color: $wight;
+  }
+}
 
-//     &--active {
-//       display: block;
-//     }
-//   }
-// }
-
-.filter__dropdown {
+.filter__open {
   display: none;
 
   @media (max-width: $desktop-width) {
@@ -26,24 +21,89 @@
   }
 }
 
+.filter__modal {
+  @media (max-width: $desktop-width) {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $grey;
+    z-index: 200;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+
+    &--passive {
+      display: none;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
 .filter__form {
   @media (max-width: $desktop-width) {
-    width: 50%;
+    width: 440px;
 
     &--closed {
       display: none;
     }
 
     &--opened {
-      position: fixed;
+      position: absolute;
       background-color: $wight;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-bottom: 40px;
-      padding-right: 200px;
+      padding: 20px 200px 40px 20px;
       left: 50%;
-      top: 50%;
+      top: 65%;
       transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+    padding: 20px 20px;
+  }
+}
+
+.filter__close {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: $black-opopacity-01;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $wight;
+      width: 14px;
+      height: 2px;
+      top: 11px;
+      right: 6px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
     }
   }
 }
@@ -83,7 +143,6 @@
   }
 
   &--active {
-
     &::after {
       transform-origin: center center;
       transform: rotate(180deg);
@@ -175,19 +234,4 @@
   position: absolute;
   left: -20px;
   top: 10px;
-}
-
-.filter__button {
-  border: 1px solid $brown;
-  width: 100%;
-  background-color: $wight;
-  padding: 25px 20px;
-  margin-bottom: 25px;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $brown;
-    color: $wight;
-  }
 }

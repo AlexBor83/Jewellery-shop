@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jewellery-shop</title>
-  <!-- <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="preload" href="fonts/poppins-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -117,16 +117,17 @@
     <div class="container">
       <div class="catalog">
         <div class="catalog__filter filter">
+          <button class="filter__button filter__open" type="button" aria-label="Кнопка открытия фильтра">
+            Filter
+          </button>
 
           <!-- filter__modal--active -->
-
-          <div class="filter__modal ">
-            <button class="filter__button filter__dropdown filter__dropdown--open" type="button" aria-label="Кнопка открытия фильтра">
-              Filter
-            </button>
+          <div class="filter__modal filter__modal--passive">
             <!-- filter__form--closed filter__form--opened -->
             <form action="#" class="filter__form filter__form--closed">
-              <button class="filter__dropdown filter__dropdown--close" type="button" aria-label="Кнопка закрытия фильтра"></button>
+
+              <!-- filter__close--show -->
+              <button class="filter__close" type="button" aria-label="Кнопка закрытия фильтра"></button>
               <div class="filter__wrap">
                 <fieldset class="filter__name">
 
@@ -209,7 +210,8 @@
                         Dreams
                       </label>
                     </li>
-                </ul></fieldset>
+                  </ul>
+                </fieldset>
               </div>
               <div class="filter__wrap filter__wrap--range">
                 <fieldset class="filter__name">
@@ -232,7 +234,8 @@
                         </span>
                       </div>
                     </div>
-                </div></fieldset>
+                  </div>
+                </fieldset>
               </div>
               <button class="filter__button filter__button--active" type="button">
                 Apply
@@ -245,7 +248,6 @@
         </div>
 
         <div class="catalog__cards cards">
-
           <div class="card">
             <div class="card__img">
               <picture>
@@ -476,37 +478,37 @@
           </div>
 
           <div class="cards__pagination pagination">
-            <a class="pagination__page" href="#">
+            <a class="pagination__page" href="#" aria-label="Следующая страница каталога магазина chjewellery">
               Previous
             </a>
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                <a class="pagination__link" href="#" aria-label="Страница каталога магазина chjewellery">
                   1
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                <a class="pagination__link" href="#" aria-label="Страница каталога магазина chjewellery">
                   2
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                <a class="pagination__link" href="#" aria-label="Страница каталога магазина chjewellery">
                   3
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                <a class="pagination__link" href="#" aria-label="Страница каталога магазина chjewellery">
                   4
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#" alt="Страница каталога магазина chjewellery">
+                <a class="pagination__link" href="#" aria-label="Страница каталога магазина chjewellery">
                   5
                 </a>
               </li>
             </ul>
-            <a class="pagination__page" href="#">
+            <a class="pagination__page" href="#" aria-label="Предыдущая страница каталога магазина chjewellery">
               Next
             </a>
           </div>
@@ -657,20 +659,13 @@
             </a>
           </li>
         </ul>
-
-
-
-
-
       </section>
     </div>
-
   </footer>
 
   <!-- modal--opened -->
 
   <div class="modal modal--closed">
-
     <div class="modal-wrap">
       <button class="modal__button" type="button" aria-label="Закрыть модальное окно"></button>
       <section class="modal__content">
@@ -698,12 +693,12 @@
           </a>
         </p>
       </section>
-
     </div>
+  </div>
 
-    <script src="js/vendor.js"></script>
-    <script src="js/script.js"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
 
-</div></body>
+</body>
 
 </html>
