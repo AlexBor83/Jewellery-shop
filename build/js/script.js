@@ -59,6 +59,7 @@ const modalOpen = () => {
   body.classList.add('body__fixed-page');
   loginModal.classList.add('modal--opened');
   inputLoginModal.focus();
+
 };
 
 const modalClose = () => {
@@ -160,25 +161,21 @@ const toggleAnswer = () => {
 toggleAnswer();
 
 // swiper
-
 new Swiper('.swiper', {
 
   //стрелки
-
   navigation: {
     nextEl: `.swiper-button-prev`,
     prevEl: `.swiper-button-next`,
   },
 
   //Пагинация
-
   pagination: {
     el: '.swiper-pagination',
 
     clickable: true,
 
     // пвгинация цифрми
-
     renderBullet: function (index, className) {
       return '<span class ="' + className + '">' + (index + 1) + '</span>';
     },
@@ -190,6 +187,7 @@ new Swiper('.swiper', {
   //количество перелистываемых слайдов
   slidesPerGroup: 2,
 
+  //брекпоинты
   breakpoints: {
     1023: {
       slidesPerView: 4,
@@ -287,7 +285,7 @@ const filterCheckboxClearAll = () => {
 
   filterButtonClear.addEventListener('click', () => {
     filterCheckbox.forEach((i) =>{
-      i.checked=false;//i.removeAttribute('checked')
+      i.checked=false;
     });
   });
 };
