@@ -21,13 +21,13 @@
   align-items: center;
 }
 
-.subscribe__label {
+.subscribe__form label {
   @media (max-width: $tablet-width) {
     width: 60%;
   }
 }
 
-.subscribe__input {
+.subscribe__form input {
   background-color: transparent;
   border: none;
   color: $grey;
@@ -43,7 +43,7 @@
   }
 }
 
-.subscribe__button {
+.subscribe__form button {
   border: none;
   background-color: transparent;
   color: $wight;

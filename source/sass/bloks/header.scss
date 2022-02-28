@@ -109,9 +109,23 @@
   }
 }
 
-.header__label {
+.header__search label {
   @media (max-width: $desktop-width) {
     display: block;
+  }
+}
+
+.header__search svg {
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -149,12 +163,6 @@
     fill: $brown;
   }
 
-  @media (max-width: $desktop-width) {
-    &--search {
-      display: none;
-    }
-  }
-
   @media (max-width: $tablet-width) {
     &--logo {
       width: 52px;
@@ -170,7 +178,7 @@
   }
 }
 
-.header__input {
+.header__search input {
   border: none;
 
   &::placeholder {
@@ -194,7 +202,6 @@
     }
   }
 }
-
 
 .header__login,
 .header__cart {

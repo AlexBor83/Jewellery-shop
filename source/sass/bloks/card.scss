@@ -22,26 +22,26 @@
   }
 }
 
-.card__img {
+.card div {
   margin-bottom: 16px;
 }
 
-.card__img img {
+.card div img {
   width: 100%;
 }
 
-.card__name,
-.card__price {
+.card p,
+.card span {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.card__name {
+.card p {
   margin-bottom: 6px;
 }
 
-.card__price {
+.card span {
   font-size: 14px;
   line-height: 18.2px;
   font-weight: 700;
