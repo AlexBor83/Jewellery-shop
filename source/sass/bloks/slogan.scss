@@ -1,6 +1,6 @@
 .slogan {
   background-color: $brown;
-  background-image: url("../img/index-img/background-main-desktop.png");
+  background-image: url("../img/index-img/background-main-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -12,51 +12,51 @@
   margin-bottom: 121px;
 
   &--catalog {
-    background-image: url("../img/catalog-img/background-catalog-desktop.png");
+    background-image: url("../img/catalog-img/background-catalog-desktop.jpg");
     min-height: 261px;
     margin-bottom: 80px;
   }
 
   @media (min-resolution: $retina-dpi-2) {
-    background-image: url("../img/index-img/background-main-desktop@2x.png");
+    background-image: url("../img/index-img/background-main-desktop@2x.jpg");
 
     &--catalog {
-      background-image: url("../img/catalog-img/background-catalog-desktop@2x.png");
+      background-image: url("../img/catalog-img/background-catalog-desktop@2x.jpg");
     }
   }
 
   @media (max-width: $desktop-width) {
-    background-image: url("../img/index-img/background-main-tablet.png");
+    background-image: url("../img/index-img/background-main-tablet.jpg");
     margin-bottom: 70px;
 
     &--catalog {
-      background-image: url("../img/catalog-img/background-catalog-tablet.png");
+      background-image: url("../img/catalog-img/background-catalog-tablet.jpg");
       margin-bottom: 48px;
     }
 
     @media (min-resolution: $retina-dpi-2) {
-      background-image: url("../img/index-img/background-main-tablet@2x.png");
+      background-image: url("../img/index-img/background-main-tablet@2x.jpg");
 
       &--catalog {
-        background-image: url("../img/catalog-img/background-catalog-tablet@2x.png");
+        background-image: url("../img/catalog-img/background-catalog-tablet@2x.jpg");
       }
     }
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../img/index-img/background-main-mobile.png");
+    background-image: url("../img/index-img/background-main-mobile.jpg");
     margin-bottom: 60px;
 
     &--catalog {
-      background-image: url("../img/catalog-img/background-catalog-mobile.png");
+      background-image: url("../img/catalog-img/background-catalog-mobile.jpg");
       margin-bottom: 40px;
     }
 
     @media (min-resolution: $retina-dpi-2) {
-      background-image: url("../img/index-img/background-main-mobile@2x.png");
+      background-image: url("../img/index-img/background-main-mobile@2x.jpg");
 
       &--catalog {
-        background-image: url("../img/catalog-img/background-catalog-mobile@2x.png");
+        background-image: url("../img/catalog-img/background-catalog-mobile@2x.jpg");
       }
     }
   }
