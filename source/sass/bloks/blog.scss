@@ -43,9 +43,14 @@
   &--big {
     position: absolute;
     width: 284px;
-    height: 310px;
+    height: 305px;
     bottom: 0;
     right: 0;
+    padding-top: 66px;
+  }
+
+  &--last-child {
+    padding-top: 66px;
   }
 
   @media (max-width: $desktop-width) {
@@ -55,12 +60,17 @@
       position: static;
       flex-basis: 50%;
       height: auto;
+      padding-top: 85px;
     }
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
     padding-top: 40px;
+
+    &--big {
+      padding-top: 58px;
+    }
   }
 }
 
@@ -74,6 +84,11 @@
   @media (max-width: $desktop-width) {
     margin-bottom: 13px;
   }
+}
+
+.blog__description--big span,
+.blog__description--last-child span {
+  margin-bottom: 14px;
 }
 
 .blog__description p {

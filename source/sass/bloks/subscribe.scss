@@ -5,13 +5,18 @@
   line-height: 44px;
   font-weight: 700;
   margin-bottom: 8px;
+  letter-spacing: 0.022em;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .subscribe__text {
   line-height: 21px;
   color: $grey;
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
 }
 
 .subscribe__form {
@@ -65,5 +70,13 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 27px;
+
+    &::after {
+      right: -13px;
+    }
   }
 }

@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   width: 270px;
+  color: $black-opopacity-01;
+
 
   @media (max-width: $desktop-width) {
     width: 324px;

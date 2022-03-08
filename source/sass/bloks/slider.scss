@@ -28,12 +28,8 @@
   }
 }
 
-.slider__link {
-  color: $black-opopacity-01;
-  display: block;
+.slider__cover {
   margin-bottom: -80px;
-  position: relative;
-  z-index: 100;
 
   @media (max-width: $desktop-width) {
     margin-bottom: -86px;
@@ -44,10 +40,15 @@
   }
 }
 
+.slider__link {
+  color: $black-opopacity-01;
+  position: relative;
+  z-index: 100;
+}
+
 .slider__wrap {
   padding-top: 140px;
-  //margin-top: 140px;
-
+  
   @media (max-width: $tablet-width) {
     padding-top: 0;
   }
@@ -113,5 +114,10 @@
         top: 13px;
       }
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
   }
 }

@@ -1,0 +1,22 @@
+.index-slogan {
+  background-color: $brown;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.index-slogan__title {
+  margin: 0;
+  text-align: center;
+  font-family: $font-family--cormorantGaramond;
+  font-size: 45px;
+  line-height: 49px;
+  font-weight: 700;
+}
+
+.index-slogan__link {
+  font-family: $font-family--cormorantGaramond;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 49px;
+  color: $black-opopacity-01;
+}

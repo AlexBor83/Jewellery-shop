@@ -18,7 +18,7 @@
 }
 
 .social__item {
-  margin-bottom: 22px;
+  margin-bottom: 3px;
 
   &:last-child {
     margin-bottom: 0;
@@ -34,10 +34,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 20px;
+    margin-right: 18px;
   }
 }
 
 .social__svg {
-  margin-right: 15px;
+  margin-right: 12px;
 }

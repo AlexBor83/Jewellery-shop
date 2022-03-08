@@ -10,11 +10,13 @@
   flex-direction: column;
   justify-content: center;
   margin-bottom: 121px;
+  padding-top: 2px;
 
   &--catalog {
     background-image: url("../img/catalog-img/background-catalog-desktop.jpg");
     min-height: 261px;
     margin-bottom: 80px;
+    padding-top: 0;
   }
 
   @media (min-resolution: $retina-dpi-2) {
@@ -28,6 +30,8 @@
   @media (max-width: $desktop-width) {
     background-image: url("../img/index-img/background-main-tablet.jpg");
     margin-bottom: 70px;
+    padding-top: 0;
+
 
     &--catalog {
       background-image: url("../img/catalog-img/background-catalog-tablet.jpg");
@@ -67,36 +71,61 @@
   text-align: center;
   font-family: $font-family--cormorantGaramond;
   font-size: 45px;
-  line-height: 59px;
+  line-height: 49px;
   font-weight: 700;
   text-transform: uppercase;
   color: $wight;
+  letter-spacing: 0.03em;
+
+
 
   &--catalog {
     font-size: 34px;
     line-height: 44px;
   }
 
+  @media (max-width: $desktop-width) {
+    margin-left: -18px;
+  }
+
+
   @media (max-width: $tablet-width) {
     font-size: 38px;
-    line-height: 49px;
+    line-height: 40px;
+    padding-top: 17px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 0;
   }
 }
 
 .slogan__text {
-  display: block;
+  text-align: center;
+  font-family: $font-family--cormorantGaramond;
   font-weight: 400;
   font-size: 38px;
   line-height: 49px;
+  text-align: center;
   font-style: italic;
   text-transform: lowercase;
   padding-left: 15px;
   padding-right: 15px;
+  color: $wight;
 
   &--catalog {
     font-size: 22px;
     line-height: 28px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin-left: -18px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 44px;
+
   }
 }

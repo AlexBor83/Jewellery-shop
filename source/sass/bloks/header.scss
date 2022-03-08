@@ -18,16 +18,15 @@
   min-height: 115px;
   border-bottom: 1px solid $greylight;
   position: relative;
-  padding-top: 10px;
 
   @media (max-width: $desktop-width) {
     //flex-direction: column-reverse;
     border: none;
-    min-height: 119px;
+    min-height: 117px;
   }
 
   @media (max-width: $tablet-width) {
-    min-height: 89px;
+    min-height: 87px;
   }
 }
 
@@ -35,11 +34,11 @@
 .header--nojs .header__container {
   @media (max-width: $desktop-width) {
     flex-direction: column;
-    padding: 30px 45px 55px 45px;
+    padding: 30px 44px 25px 44px;
   }
 
   @media (max-width: $tablet-width) {
-    padding: 30px 15px 45px 15px;
+    padding: 20px 15px 10px 15px;
   }
 }
 
@@ -48,8 +47,8 @@
   z-index: 10;
   width: 25px;
   height: 25px;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: 30px;
   position: relative;
   background-color: transparent;
   border: none;
@@ -61,8 +60,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: -3px;
-      left: 30px;
+      top: 2px;
+      left: 0px;
       width: 25px;
       height: 2px;
       background-color: $black-opopacity-01;
@@ -71,9 +70,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    &::after {
-      left: 0;
-    }
+    top: 0px;
+    left: 0px;
   }
 }
 
@@ -84,7 +82,7 @@
 .header--opened-menu .header__toggle {
   @media (max-width: $desktop-width) {
     position: absolute;
-    left: 20px;
+    left: 44px;
     top: 50px;
 
     &::after {
@@ -92,9 +90,16 @@
       box-shadow: 0 8px 0 0 $wight, 0 16px 0 0 $wight;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    left: 16px;
+    top: 35px;
+  }
 }
 
 .header__search {
+  margin-bottom: 8px;
+
   @media (max-width: $desktop-width) {
     display: none;
   }
@@ -131,10 +136,12 @@
 
 .header__logo {
   margin-right: 110px;
+  margin-top: 18px;
 
   @media (max-width: $desktop-width) {
     margin-right: 0;
     margin-left: 16px;
+    margin-top: 0;
   }
 
   &--page {
@@ -146,7 +153,11 @@
 .header--opened-menu .header__logo,
 .header--nojs .header__logo {
   @media (max-width: $desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
   }
 }
 
@@ -163,6 +174,15 @@
     fill: $brown;
   }
 
+  &--main {
+    cursor: auto;
+
+    &:hover,
+    &:focus {
+      opacity: 1
+    }
+  }
+
   @media (max-width: $tablet-width) {
     &--logo {
       width: 52px;
@@ -175,6 +195,7 @@
 .header--nojs .header__svg--logo {
   @media (max-width: $desktop-width) {
     fill: $wight;
+    margin-right: 16px;
   }
 }
 
@@ -203,6 +224,10 @@
   }
 }
 
+.header__user {
+  margin-bottom: 8px;
+}
+
 .header__login,
 .header__cart {
   color: $black-opopacity-01;
@@ -224,13 +249,14 @@
       width: 20px;
       height: 22px;
       right: -6px;
-      top: -6px;
+      top: 1px;
     }
   }
 
   @media (max-width: $tablet-width) {
     &::after {
-      right: -29px;
+      right: -36px;
+      top: 3px;
     }
   }
 }
@@ -254,7 +280,14 @@
     &::after {
       background-image: url("../img/svg/Vector-wight.svg");
       background-repeat: no-repeat;
+      right: -11px;
+      top: 4px;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    right: -10px;
+    top: 33px;
   }
 }
 
@@ -262,6 +295,10 @@
   @media (max-width: $desktop-width) {
     display: none;
   }
+}
+
+.header__botom {
+  padding-bottom: 2px;
 }
 
 .header__list {
@@ -284,11 +321,13 @@
   @media (max-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    padding-left: 45px;
+    padding-left: 30px;
+    padding-bottom: 60px;
   }
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -302,7 +341,7 @@
 
   @media (max-width: $desktop-width) {
     padding-left: 0;
-    padding-bottom: 40px;
+    padding-bottom: 14px;
     &--tablet {
       display: block;
     }
@@ -311,10 +350,13 @@
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 36px;
+    padding-bottom: 2px;
 
     &--tablet {
       font-size: 18px;
       line-height: 23px;
+      padding-bottom: 2px;
+      padding-top: 23px;
     }
   }
 }

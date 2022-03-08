@@ -2,7 +2,7 @@
   margin-bottom: 127px;
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 74px;
   }
 
   @media (max-width: $tablet-width) {
@@ -18,6 +18,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 18px;
+  letter-spacing: 0.03em;
 }
 
 .chjewellery-insta__link {
@@ -33,7 +34,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 }
 

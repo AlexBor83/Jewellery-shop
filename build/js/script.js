@@ -175,9 +175,11 @@ new Swiper('.swiper', {
 
     clickable: true,
 
-    // пвгинация цифрми
-    renderBullet: function (index, className) {
-      return '<span class ="' + className + '">' + (index + 1) + '</span>';
+    type: 'fraction',
+
+    renderFraction: function (currentClass, totalClass) {
+      return '<span class ="' + currentClass + '"></span>' + ' of ' +
+      '<span class ="' + totalClass + '"></span>';
     },
   },
 
@@ -189,6 +191,19 @@ new Swiper('.swiper', {
 
   //брекпоинты
   breakpoints: {
+
+    768: {
+      pagination: {
+
+        type: 'bullets',
+
+        // пвгинация цифрми
+        renderBullet: function (index, className) {
+          return '<span class ="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    },
+
     1023: {
       slidesPerView: 4,
       slidesPerGroup: 4,

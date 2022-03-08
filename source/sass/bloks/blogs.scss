@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 89px;
+    margin-bottom: 71px;
   }
 }
 
@@ -23,14 +23,16 @@
   margin-bottom: 20px;
 }
 
-.blogs__link {
-  color: $black-opopacity-01;
-  display: block;
+.blogs__cover {
   margin-bottom: 63px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 54px;
   }
+}
+
+.blogs__link {
+  color: $black-opopacity-01;
 }
 
 .blogs__list {
@@ -45,11 +47,11 @@
   @media (max-width: $desktop-width) {
     grid-template-columns: repeat(1, 1fr);
     width: 678px;
-    row-gap: 46px;
+    row-gap: 45px;
   }
 
   @media (max-width: $tablet-width) {
     width: 290px;
-    grid-gap: 35px;
+    grid-gap: 34px;
   }
 }
